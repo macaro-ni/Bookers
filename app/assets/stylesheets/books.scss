@@ -7,7 +7,42 @@
   box-sizing: border-box;
 }
 
+body{
+  font-size:13px;
+  color:#333;
+  margin:33px;
+  font-family:verdana, arial, helvetica, sans-serif;
+  line-height:18px;
+}
 
-.lists{
+h1{
+  font-size:2em;
+  margin:10px;
+}
+
+h2{
+  font-size:19px;
+}
+table{
+  display:table;
+  border-collapse:separate;/*表の線の隙間。初期値もこれ*/
+  border-spacing:2px;
+}
+ .book_title,.book_body{
+   margin:0 20px;
+ }
+
+form{
+  display:block;
+  margin-top:0em;
+}
+
+/*show.html.erb */
+.title-box,.body-box{
   display:flex;
+}
+
+/*indexとedit.html.erb*/
+.title-body-index,.under-link{
+  display:flex
 }
