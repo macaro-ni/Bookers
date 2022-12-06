@@ -3,18 +3,18 @@
 <div> <%= flash[:notice] %></div>
 
 <div class="title-box">
-    <h2>title:</h2>
+    <h4>Title:</h4>
     <%= @book.title %>
 </div>
 
 <div class="body-box">
-    <h2>body:</h2>
+    <h4>Body:</h4>
     <%= @book.body %>
 </div>
 
 <div class="under-link">
     <%= link_to 'Edit',edit_book_path(@book.id) %>
-    <p>|</p>
+    <p class="line"> | </p>
     <%= link_to 'Back', books_path  %>
 </div>
 
